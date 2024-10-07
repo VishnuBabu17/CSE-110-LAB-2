@@ -1,6 +1,7 @@
 import './App.css';
 import { Label, Note } from "./types"; // Import the Label type from the appropriate module
 import { dummyNotesList } from "./constant"; // Import the dummyNotesList from the appropriate module
+import { ClickCounter } from "./hookexercise"
 
 function App() {
  return (
@@ -26,6 +27,7 @@ function App() {
          </div>
        ))}
      </div>
+     <ClickCounter></ClickCounter>
    </div>
 
  );
