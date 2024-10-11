@@ -110,3 +110,11 @@
   background-color: rgb(220, 89, 89);
   color: white;
  }
+
+ #favoritesButton:hover {
+  background-color: rgb(220, 89, 89);
+ }
+
+ #deleteNote:hover {
+  background-color: rgb(220, 89, 89);
+ }
