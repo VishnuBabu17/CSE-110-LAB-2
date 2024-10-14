@@ -48,7 +48,7 @@
                 <option value="study">Study</option>
                 <option value="other">Other</option>
            </select>
-           <button type="submit">Submit</button>
+           <button id="submitNote" type="submit">Submit</button>
        </form>
 
        <div class="result" id="result"></div>
@@ -85,6 +85,14 @@
        });
 
        document.getElementById("content").addEventListener("blur", function () {
+           this.style.backgroundColor = "";  // Reset background on blur
+       });
+
+       document.getElementById("submitNote").addEventListener("focus", function () {
+           this.style.backgroundColor = "#e0f7fa";  // Light blue background on focus
+       });
+
+       document.getElementById("submitNote").addEventListener("blur", function () {
            this.style.backgroundColor = "";  // Reset background on blur
        });
 
